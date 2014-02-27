@@ -1,5 +1,6 @@
 'fileTypes': [
-  'dylan'
+  'dylan',
+  'intr'
 ]
 'name': 'Dylan'
 'patterns': [
