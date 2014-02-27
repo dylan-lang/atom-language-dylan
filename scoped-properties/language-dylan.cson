@@ -1,3 +1,7 @@
 '.source.dylan':
   'editor':
+    'commentStart': '/*'
+    'commentEnd': '*/'
+    'increaseIndentPattern': '^[^%]*(\\b(case|define|for|if|select|unless|until|when|while)\\b(?!.*\\b(end)\\b.*))'
+    'decreaseIndentPattern': '^\\s*\\b(end)\\b'
     'foldEndPattern': '(?x)\n\t\t(   ^\\s*+end.*$\n\t\t|   [\\/\\/] .*? \\(end\\) \\s*+ $    \t\t# Sune’s special marker\n\t\t|   ^\\s*\\/\\/\\s*\\#endregion\n\t\t)'
