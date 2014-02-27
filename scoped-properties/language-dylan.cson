@@ -1,0 +1,3 @@
+'.source.dylan':
+  'editor':
+    'foldEndPattern': '(?x)\n\t\t(   ^\\s*+end.*$\n\t\t|   [\\/\\/] .*? \\(end\\) \\s*+ $    \t\t# Sune’s special marker\n\t\t|   ^\\s*\\/\\/\\s*\\#endregion\n\t\t)'
