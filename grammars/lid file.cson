@@ -1,5 +1,6 @@
 'fileTypes': [
   'lid'
+  'hdp'
 ]
 'name': 'Lid File'
 'patterns': [
