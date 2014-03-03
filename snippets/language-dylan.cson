@@ -23,6 +23,12 @@
   'define method':
     'prefix': 'defm'
     'body': 'define method $1 ($2) => ($3)\n  $4\nend method;\n'
+  'define objc-class':
+    'prefix': 'defoc'
+    'body': 'define objc-class $1 ($2) => $3\n  $4\nend objc-class;\n'
+  'define objc-method':
+    'prefix': 'defom'
+    'body': 'define method $1 ($2) => ($3)\n  c-signature: ($4) => ($5)\n  $6\nend objc-method;\n'
   'define suite':
     'prefix': 'defs'
     'body': 'define suite $1 ()\n  $2;\nend suite;\n'
