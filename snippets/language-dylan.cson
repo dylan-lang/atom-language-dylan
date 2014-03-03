@@ -33,7 +33,7 @@
     'prefix': 'defs'
     'body': 'define suite $1 ()\n  $2;\nend suite;\n'
   'define test':
-    'prefix': 'defs'
+    'prefix': 'deft'
     'body': 'define test $1 ()\n  $2;\nend test;\n'
   'define thread variable':
     'prefix': 'deftv'
