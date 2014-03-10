@@ -32,7 +32,7 @@
     ]
   }
   {
-    'begin': '^(module|synopsis|author|copyright|version|files|executable|library):'
+    'begin': '^([Mm]odule|[Ss]ynopsis|[Aa]uthor|[Cc]opyright|[Vv]ersion|[Ff]iles|[Ee]xecutable|[Ll]ibrary):[ \\t]'
     'contentName': 'meta.preprocessor.dylan'
     'end': '^\\s*$'
     'name': 'keyword.control.preprocessor.dylan'
@@ -118,8 +118,10 @@
     'name': 'constant.language.dylan'
   }
   {
-    'match': '\\b((#x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b'
-    'name': 'constant.numeric.dylan'
+    'captures':
+      '2':
+        'name': 'constant.numeric.dylan'
+    'match': '(^|[,; \\t\\[\\]\\(\\)])((#x[0-9a-fA-F]+)|(-?([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)([,; \\t\\[\\]\\(\\)]|$)'
   }
   {
     'match': '\'(\\\\<[0-9a-fA-F]*>|\\\\.|.)\''
@@ -174,6 +176,6 @@
     'begin': '(?<=^|\\s|\\()/\\*'
     'end': '\\*/'
   'escape':
-    'match': '\\\\(<[0-9a-fA-F]*>|.)'
+    'match': '\\\\(<[0-9a-fA-F]+>|.)'
     'name': 'constant.character.escape.dylan'
 'scopeName': 'source.dylan'
