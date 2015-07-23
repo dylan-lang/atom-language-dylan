@@ -1,6 +1,6 @@
 {
   "name": "language-dylan",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "private": true,
   "description": "Dylan language support",
   "repository": "https://github.com/dylan-lang/atom-language-dylan",
